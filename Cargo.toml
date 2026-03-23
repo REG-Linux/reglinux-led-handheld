@@ -1,0 +1,16 @@
+[package]
+name = "reglinux-led-handheld"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+description = "LED controller daemon for REG-Linux handheld devices"
+repository = "https://github.com/REG-Linux/reglinux-led-handheld"
+
+[[bin]]
+name = "reglinux-led-handheld"
+path = "src/main.rs"
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "s"
